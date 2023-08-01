@@ -21,7 +21,12 @@ public class Ingredient {
     }
 
     public void setWater(int water) {
-        this.water = water;
+        if(water < 0){
+            System.out.println("물이 부족합니다");
+            return;
+        } else {
+            this.water = water;
+        }
     }
 
 //    milk getter, setter
@@ -30,7 +35,12 @@ public class Ingredient {
     }
 
     public void setMilk(int milk) {
-        this.milk = milk;
+        if(milk < 0) {
+            System.out.println("우유가 부족합니다");
+            return;
+        } else {
+            this.milk = milk;
+        }
     }
 
 //    coffeeBeans getter, setter
@@ -39,7 +49,12 @@ public class Ingredient {
     }
 
     public void setCoffeeBeans(int coffeeBeans) {
-        this.coffeeBeans = coffeeBeans;
+        if(coffeeBeans < 0) {
+            System.out.println("원두가 부족합니다");
+            return;
+        } else {
+            this.coffeeBeans = coffeeBeans;
+        }
     }
 
 //    disposableCup getter, setter
@@ -48,6 +63,11 @@ public class Ingredient {
     }
 
     public void setDisposableCup(int disposableCup) {
-        this.disposableCup = disposableCup;
+        if(disposableCup < 0) {
+            System.out.println("컵이 부족합니다");
+            return;
+        } else {
+            this.disposableCup = disposableCup;
+        }
     }
 }
