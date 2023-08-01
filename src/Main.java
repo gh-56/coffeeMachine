@@ -3,7 +3,6 @@ public class Main {
     public static void main(String[] args) {
 
         boolean run = true;
-        Ingredient ingredient = new Ingredient();
         CoffeeMachine coffeeMachine = new CoffeeMachine();
         Scanner scanner = new Scanner(System.in);
         System.out.println("==========================");
